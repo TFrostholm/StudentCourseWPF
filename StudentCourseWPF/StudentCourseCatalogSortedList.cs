@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentCourseWPF
 {
-    class StudentCourseCatalogSortedList
+    class StudentCourseCatalogSortedList : StudentCatalog
     {
         SortedList<int, Student> students = new SortedList<int, Student>();
 
