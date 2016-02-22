@@ -22,15 +22,16 @@ namespace StudentCourseWPF
     {
         //private StudentCourseCatalogDic catalog;
         //private StudentCourseCatalogSortedDic catalog;
-        private StudentCourseCatalogSortedList catalog;
-        
+        //private StudentCourseCatalogSortedList catalog;
+        private StudentCatalog catalog;
+
 
         public MainWindow()
         {
             InitializeComponent();
-            //catalog = new StudentCourseCatalogDic();
+            catalog = new StudentCourseCatalogDic();
             //catalog = new StudentCourseCatalogSortedDic();
-            catalog = new StudentCourseCatalogSortedList();
+            //catalog = new StudentCourseCatalogSortedList();
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

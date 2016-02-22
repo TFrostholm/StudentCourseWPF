@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentCourseWPF
 {
-    class Student : IComparable<Student>
+    public class Student : IComparable<Student>
     {
         private int studentID; 
         private string firstName;
@@ -71,5 +71,27 @@ namespace StudentCourseWPF
             }
 
         }
+
+            public override bool Equals(object obj)
+            {
+                if (obj == null) return base.Equals(obj);
+                if (!(obj is Student))
+                    throw new InvalidCastException("The Object isn't of Type Student.");
+                else
+                    return Equals(obj as Student);
+            }
+
+            public bool Equals(Student otherPerson)
+            {
+                if (StudentID == otherPerson.StudentID)
+                    return true;
+                else
+                    return false;
+            }
+
+            public override int GetHashCode()
+            {
+                return StudentID.GetHashCode();
+            }
     }
 }

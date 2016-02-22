@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StudentCatalog.cs" />
     <Compile Include="StudentCourseCatalogSortedList.cs" />
     <Compile Include="StudentCourseCatalogSortedDic.cs" />
     <Compile Include="Student.cs" />
